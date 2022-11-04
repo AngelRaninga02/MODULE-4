@@ -1,0 +1,169 @@
+1.what is file function in python ?what is keywords to create and write file.
+
+A file object allows us to use, access and manipulate all the user accessible files. One can read and write any such files. When a file operation fails for an I/O-related reason, the exception IOError is raised.
+
+The fopen() function is also used to create a file. Maybe a little confusing, but in PHP, a file is created using the same function used to open files.
+
+2.explain exception handling? what is an error in python ?
+
+An Exception is an error that happens during the execution of a program. Whenever there is an error, Python generates an exception that could be handled. It basically prevents the program from getting crashed.
+
+A syntax error is one of the most basic types of error in programming. Whenever we do not write the proper syntax of the python programming language (or any other language) then the python interpreter or parser throws an error known as a syntax error. The syntax error simply means that the python parser is unable to understand a line of code.
+
+3.how many except statements can a try-except block have? name some built-in exception classes.
+
+Python has many built-in exceptions that are raised when your program encounters an error (something in the program goes wrong).
+
+When these exceptions occur, the Python interpreter stops the current process and passes it to the calling process until it is handled. If not handled, the program will crash.
+
+For example, let us consider a program where we have a function A that calls function B, which in turn calls function C. If an exception occurs in function C but is not handled in C, the exception passes to B and then to A.
+
+If never handled, an error message is displayed and our program comes to a sudden unexpected halt.
+
+4.when will the else part of try-except-else be executed?
+
+The else part is executed when no exception occurs
+
+5.can one of except statements handle multiple exception ?
+
+In Python, try-except blocks can be used to catch and respond to one or multiple exceptions. In cases where a process raises more than one possible exception, they can all be handled using a single except clause.
+
+6.when is the finally block executed?
+
+The finally block will be executed no matter if the try block raises an error or not. This can be useful to close objects and clean up resources.
+
+7.what happen when,,1"==1 is executed ?
+
+It simply evaluates to False and does not raise any exception.
+
+8.how do you handle exceptions with try/except/finally in python?explain with coding snippets.
+
+An exception in Python is an incident that happens while executing a program that causes the regular course of the program's commands to be disrupted. When a Python code comes across a condition it can't handle, it raises an exception. An object in Python that describes an error is called an exception.
+
+When a Python code throws an exception, it has two options: handle the exception immediately or stop and quit.
+
+string = "Python Exceptions"  
+  
+for s in string:  
+    if (s != o:  
+        print( s ) 
+
+ if (s != o:
+              ^
+SyntaxError: invalid syntax
+
+9.what are oops concepts ?is multiple inheritance supported in java.
+
+Multiple Inheritance is a feature of an object-oriented concept, where a class can inherit properties of more than one parent class. The problem occurs when there exist methods with the same signature in both the superclasses and subclass.
+
+10.how to define a class in python?what is self? give an example of a python class.
+
+Python is an object oriented programming language.
+
+Almost everything in Python is an object, with its properties and methods.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+
+
+10.explain inheritance in python with example ?what is init?or what is constructor in python.
+
+Inheritance allows us to define a class that inherits all the methods and properties from another class.
+
+Parent class is the class being inherited from, also called base class.
+
+Child class is the class that inherits from another class, also called derived class.
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("John", "Doe")
+x.printname()
+
+"__init__" is a reserved method in python classes. It is known as a constructor in OOP concepts. This method called when an object is created from the class and it allows the class to initialize the attributes of a class.
+
+11.what is instantion in term od oop terminology ?
+
+Instantiation ? The creation of an instance of a class. Method ? A special kind of function that is defined in a class definition. Object ? A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods.
+
+
+12.what is used to check whether an object o is and instance of class A?
+
+Use isinstance() to check an instance's type: isinstance(obj, int) will be True only if obj.__class__ is int or some class derived from int .
+
+13.what relationship is appropriate for course and faculty?
+
+association
+
+14.what relationship is appropriate for student and person ?
+
+association
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
